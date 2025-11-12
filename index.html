@@ -1,0 +1,817 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=5.0,user-scalable=no" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <title>Toral Jewels | Luxurious and Trendy Sterling Silver & Premium Moissanite Jewellery</title>
+    <meta name="description" content="Elevate your style with our trendy Sterling Silver & Moissanite Jewelry picks - a perfect blend of luxury and contemporary flair. Shine uniquely!">
+
+    <link href="css/generic.css" rel="stylesheet" />
+    <link href="css/toralstyles.css" rel="stylesheet" />
+    <link href="css/slick.css" rel="stylesheet" />
+    <link href="css/slick-theme.css" rel="stylesheet" />
+    <link href="css/toastr.min.css" rel="stylesheet" />
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/scrollEffectScripts.js"></script>
+    <script src="js/toastr.min.js"></script>
+    <script src="js/siteScripts.js"></script>
+
+</head>
+<body>
+    <input id="offerFlag" type="text" style="display: none" />
+    <div id="mySidenav" class="sidenav">
+        <span class="space20"></span>
+        <a href="<%=rootPath %>" id="sidenavlogo">
+            <img src="images/icons/logo-maroon.svg" />
+        </a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <span class="space30"></span>
+        <div class="linkContainer">
+            <a href="index.html">Home</a>
+            <a>Shop</a>
+            <ul class="abtList">
+                <li><a href="#">| New In</a></li>
+                <li><a href="#">| Best Sellers</a></li>
+                <li><a href="#">| Collabs</a></li>
+            </ul>
+
+            <a>Collection</a>
+            <ul class="abtList">
+                <li><a href="#">| Boss Babe</a></li>
+                <li><a href="#">| Signature</a></li>
+            </ul>
+
+            <a>About</a>
+            <ul class="abtList">
+                <li><a href="#">| About Moissanite</a></li>
+                <li><a href="#">| About Us</a></li>
+            </ul>
+
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
+            <span class="space20"></span>
+            <span class="space20"></span>
+        </div>
+    </div>
+    <div id="offerStrip"><div class="pad_TB_10">Buy 1 Get 1 on Selected Products</div></div>
+
+    <div id="header" style="top:45px !important">
+        <div class="col_1200 posRelative">
+            <div class="pad_TB_10">
+                <div id="container">
+                    <a href="index.html" id="logo">
+                        <img src="images/icons/logo-green.svg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sliderSpace"></div>
+
+    <div id="mainStrip" class="" style="top:143px !important">
+        <div class="col_1200 posRelative txtCenter">
+
+            <div class="hamburger" id="navBtn" onclick="openNav()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <a class="viewMore" id="catBtn">Shop All</a>
+            <div id="navMenu">
+                <a href="#" class="navAnch">New In</a>
+                <a href="#" class="navAnch">Best Seller</a>
+                <a class="viewMore" id="colBtn">Collection</a>
+                <a href="#" class="navAnch">Collabs</a>
+            </div>
+
+
+
+            <div id="allCat">
+                <span class="space20"></span>
+                <div class="col_1_4">
+                    <a class="catListTitle">Necklaces</a>
+                    <span class="space10"></span>
+                    <ul id="parentCat-4" class="catList">
+                        <li><a href="#">All Necklaces</a></li>
+                        <li><a href="#">Lariants Necklaces</a></li>
+                        <li><a href="#">Tennis Necklaces</a></li>
+                        <li><a href="#">Pendant Necklaces</a></li>
+                        <li><a href="#">Pendant And Earring Set</a></li>
+                    </ul>
+                </div>
+                <div class="col_1_4">
+                    <a class="catListTitle">Earrings</a>
+                    <span class="space10"></span>
+                    <ul id="parentCat-3" class="catList">
+                        <li><a href="#">All Earrings</a></li>
+                        <li><a href="#">Huggies</a></li>
+                        <li><a href="#">Studs</a></li>
+                        <li><a href="#">Ear Cuffs</a></li>
+                        <li><a href="#">Dangler Earrings</a></li>
+                    </ul>
+                </div>
+                <div class="m2Float"></div>
+                <div class="col_1_4">
+                    <a class="catListTitle">Bracelets</a>
+                    <span class="space10"></span>
+                    <ul id="parentCat-2" class="catList">
+                        <li><a href="#">All Bracelets</a></li>
+                        <li><a href="#">Dainty Bracelets</a></li>
+                        <li><a href="#">Tennis Bracelet</a></li>
+                    </ul>
+                </div>
+                <div class="col_1_4">
+                    <a class="catListTitle">Rings</a>
+                    <span class="space10"></span>
+                    <ul id="parentCat-1" class="catList">
+                        <li><a href="#">All Rings</a></li>
+                        <li><a href="#">Signet Rings</a></li>
+                        <li><a href="#">Solitaire Rings</a></li>
+                        <li><a href="#">Eternity Ring</a></li>
+                        <li><a href="#">Chunky Rings</a></li>
+                        <li><a href="#">Statement Ring</a></li>
+                    </ul>
+                </div>
+                <div class="m2Float"></div>
+                <div class="float_clear"></div>
+                <span class="space20"></span>
+            </div>
+
+            <div id="collMenu">
+                <span class="space20"></span>
+                <div class="col_1_4">
+                    <a href="#">Boss Babe</a>
+                </div>
+                <div class="col_1_4">
+                    <a href="#">Toral Signature</a>
+                </div>
+                <div class="float_clear"></div>
+                <span class="space20"></span>
+            </div>
+
+
+
+            <div id="cartContainer">
+                <div class="posRelative">
+                    <a href="#" id="logBtn"></a>
+                    <a id="cartBtn" href="#"></a>
+                    <a id="wlBtn" href="#" title="My Wishlist"></a>
+                    <a id="searchBtn"></a>
+
+                    <div class="float_clear"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col_1200" id="searchContainer">
+            <div class="pad_10">
+                <input id="inputSearch" type="text" placeholder="What are you looking for . ." />
+                <button id="inputBtn" type="submit" onclick="SearchProducts();">Search</button>
+            </div>
+        </div>
+    </div>
+    <div class="float_clear"></div>
+
+    <div id="slider">
+        <div id="imgSlider">
+            <div>
+                <img src="http://localhost:53599/upload/banner/slider/slider-14-01-22-50.png" alt="moon collection banner" />
+            </div>
+            <div>
+                <img src="http://localhost:53599/upload/banner/slider/slider-11-10-36-07.png" alt="Shine with TJ" />
+            </div>
+            <div>
+                <img src="http://localhost:53599/upload/banner/slider/slider-9-10-30-56.png" alt="pendant" />
+            </div>
+            <div>
+                <img src="http://localhost:53599/upload/banner/slider/slider-10-10-33-59.png" alt="#SILVERSTYLE" />
+            </div>
+            <div>
+                <img src="http://localhost:53599/upload/banner/slider/slider-13-10-40-56.png" alt="Brilliance on your wrist" />
+            </div>
+        </div>
+    </div>
+
+    <div id="catScroll">
+        <span class="space50"></span>
+        <h1 class="large txtCenter scriptBold themeClrSec">ESSENTIALS FOR YOU </h1>
+        <span class="space20"></span>
+
+
+        <div class="essentialCats">
+            <div class="pad_10">
+                <a href="#">
+                    <img src="http://localhost:53599/upload/catimg/category-image-409-34-06.jpg" class="catImage" alt="Necklaces" />
+                </a>
+            </div>
+            <div class="pad_5 txtCenter">
+                <a class="favCatName" href="#">Necklaces</a>
+            </div>
+        </div>
+        <div class="essentialCats">
+            <div class="pad_10">
+                <a href="#">
+                    <img src="http://localhost:53599/upload/catimg/category-image-309-34-22.jpg" class="catImage" alt="Earrings" />
+                </a>
+            </div>
+            <div class="pad_5 txtCenter">
+                <a class="favCatName" href="#">Earrings</a>
+            </div>
+        </div>
+        <div class="essentialCats">
+            <div class="pad_10">
+                <a href="#">
+                    <img src="http://localhost:53599/upload/catimg/category-image-211-58-40.jpg" class="catImage" alt="Bracelets" />
+                </a>
+            </div>
+            <div class="pad_5 txtCenter">
+                <a class="favCatName" href="#">Bracelets</a>
+            </div>
+        </div>
+        <div class="essentialCats">
+            <div class="pad_10">
+                <a href="#">
+                    <img src="http://localhost:53599/upload/catimg/category-image-111-58-29.jpg" class="catImage" alt="Rings" />
+                </a>
+            </div>
+            <div class="pad_5 txtCenter">
+                <a class="favCatName" href="#">Rings</a>
+            </div>
+        </div>
+        <div class="float_clear"></div>
+
+        <span class="space50"></span>
+    </div>
+
+    <div id="banner2">
+        <span class="space50"></span>
+        <div class="txtCenter">
+            <h1 class="large scriptBold txtCenter themeClrSec">PREMIUM MOISSANITE DIAMOND JEWELLERY </h1>
+            <span class="space20"></span>
+            <img src="http://localhost:53599/upload/banner/other/banner-1-11-42-43.png" class="w100" alt="Premium Moissanite Diamond Jewellery" />
+        </div>
+        <span class="space50"></span>
+    </div>
+
+
+    <div class="themeBgWhiteFFF">
+        <span class="space10"></span>
+        <h1 class="large scriptBold txtCenter themeClrSec ">NEW IN</h1>
+        <span class="space50"></span>
+        <div class="catProducts ">
+            <div class="pad_10">
+                <div class="main-container">
+                    <div class="pad_10">
+                        <a href="#">
+                            <img src="http://localhost:53599/upload/prphotos/product-photo-133-932-08-26-47.jpeg" class="primg" alt="Taini Moissanite Double Layer Necklace" />
+                        </a>
+                        <div class="descBox">
+                            <div id="fav-133" class="m-favorite">
+                                <div class="m-favorite__icon"></div>
+                                <span class="m-favorite__smallIcon filter-red"></span>
+                                <span class="m-favorite__smallIcon filter-red"></span>
+                                <span class="m-favorite__smallIcon filter-red"></span>
+                            </div>
+                            <span class="space10"></span>
+                            <div class="prTitleBox">
+                                <a href="#" class="prTitle">Taini Moissanite Double Layer Necklace</a>
+                            </div>
+                            <span class="origPrPrice">Rs. 3200</span>
+                            <div class="float_clear"></div>
+                        </div>
+                        <span class="space10"></span>
+                        <a href="#" class="viewDet">View Details</a>
+                        <div class="float_clear"></div>
+                        <span class="space5"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catProducts ">
+            <div class="pad_10">
+                <div class="main-container">
+                    <div class="pad_10">
+                        <a href="#">
+                            <img src="http://localhost:53599/upload/prphotos/product-photo-132-930-08-16-50.jpeg" class="primg" alt="Iah Moissanite Necklace" />
+                        </a>
+                        <div class="descBox">
+                            <div id="fav-132" class="m-favorite">
+                                <div class="m-favorite__icon"></div>
+                                <span class="m-favorite__smallIcon filter-red"></span>
+                                <span class="m-favorite__smallIcon filter-red"></span>
+                                <span class="m-favorite__smallIcon filter-red"></span>
+                            </div>
+                            <span class="space10"></span>
+                            <div class="prTitleBox">
+                                <a href="#" class="prTitle">Iah Moissanite Necklace</a>
+                            </div>
+                            <span class="origPrPrice">Rs. 2300</span>
+                            <div class="float_clear"></div>
+                        </div>
+                        <span class="space10"></span>
+                        <a href="#" class="viewDet">View Details</a>
+                        <div class="float_clear"></div>
+                        <span class="space5"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m2Float"></div>
+        <div class="catProducts ">
+            <div class="pad_10">
+                <div class="main-container">
+                    <div class="pad_10">
+                        <a href="#">
+                            <img src="http://localhost:53599/upload/prphotos/product-photo-131-925-08-10-49.jpeg" class="primg" alt="Aurora Moissanite Necklace" />
+                        </a>
+                        <div class="descBox">
+                            <div id="fav-131" class="m-favorite">
+                                <div class="m-favorite__icon"></div>
+                                <span class="m-favorite__smallIcon filter-red"></span>
+                                <span class="m-favorite__smallIcon filter-red"></span>
+                                <span class="m-favorite__smallIcon filter-red"></span>
+                            </div><span class="space10"></span>
+                            <div class="prTitleBox">
+                                <a href="#" class="prTitle">Aurora Moissanite Necklace</a>
+                            </div>
+                            <span class="origPrPrice">Rs. 2200</span>
+                            <div class="float_clear"></div>
+                        </div>
+                        <span class="space10"></span>
+                        <a href="#" class="viewDet">View Details</a>
+                        <div class="float_clear"></div>
+                        <span class="space5"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m3Float"></div>
+        <div class="catProducts ">
+            <div class="pad_10">
+                <div class="main-container">
+                    <div class="pad_10">
+                        <a href="#">
+                            <img src="http://localhost:53599/upload/prphotos/product-photo-130-921-08-02-39.jpeg" class="primg" alt="Crescent Sparkle Necklace Set" />
+                        </a>
+                        <div class="descBox">
+                            <div id="fav-130" class="m-favorite">
+                                <div class="m-favorite__icon">
+                                </div>
+                                <span class="m-favorite__smallIcon filter-red"></span>
+                                <span class="m-favorite__smallIcon filter-red"></span>
+                                <span class="m-favorite__smallIcon filter-red"></span>
+                            </div><span class="space10"></span>
+                            <div class="prTitleBox">
+                                <a href="#" class="prTitle">Crescent Sparkle Necklace Set</a>
+                            </div>
+                            <span class="origPrPrice">Rs. 6450</span>
+                            <div class="float_clear"></div>
+                        </div>
+                        <span class="space10"></span>
+                        <a href="#" class="viewDet">View Details</a>
+                        <div class="float_clear"></div>
+                        <span class="space5"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m2Float"></div>
+        <div class="m4Float"></div>
+        <span class="space30"></span>
+        <div class="txtCenter">
+            <a href="#" class="greenAnch">Explore</a>
+        </div>
+        <div class="float_clear"></div>
+        <span class="space50"></span>
+    </div>
+
+    <div class="themeBgWhiteFFF">
+        <span class="space10"></span>
+        <h1 class="large scriptBold txtCenter themeClrSec ">BEST SELLERS</h1>
+        <span class="space50"></span>
+        <div class="catProducts ">
+            <div class="pad_10">
+                <div class="main-container">
+                    <span class="bestSellerLblNew">BEST SELLER</span>
+                    <div class="pad_10">
+                        <a href="#">
+                            <img src="http://localhost:53599/upload/prphotos/product-photo-109-734-02-36-12.jpg" class="primg" alt="Queen Moissanite Eternity Ring" />
+                        </a>
+                        <div class="descBox">
+                            <span class="space10"></span>
+                            <div class="prTitleBox">
+                                <a href="#" class="prTitle">Queen Moissanite Eternity Ring</a>
+                            </div>
+                            <span class="prOffer">Rs. 2000&nbsp;<span class="prPrice"><del> Rs. 2500</del></span></span>
+                            <span class="offerLbl">20% off</span>
+                            <div class="float_clear"></div>
+                        </div>
+                        <span class="space10"></span>
+                        <a href="#" class="viewDet">View Details</a>
+                        <div class="float_clear"></div>
+                        <span class="space5"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catProducts ">
+            <div class="pad_10">
+                <div class="main-container">
+                    <span class="bestSellerLblNew">BEST SELLER</span>
+                    <div class="pad_10">
+                        <a href="#">
+                            <img src="http://localhost:53599/upload/prphotos/product-photo-104-707-02-10-15.jpg" class="primg" alt="Zig Zag Moisannite Ring" />
+                        </a>
+                        <div class="descBox">
+                            <span class="space10"></span>
+                            <div class="prTitleBox">
+                                <a href="#" class="prTitle">Zig Zag Moisannite Ring</a>
+                            </div><span class="prOffer">Rs. 4900&nbsp;<span class="prPrice"><del> Rs. 6125</del></span></span>
+                            <span class="offerLbl">20% off</span>
+                            <div class="float_clear"></div>
+                        </div>
+                        <span class="space10"></span>
+                        <a href="#" class="viewDet">View Details</a>
+                        <div class="float_clear"></div>
+                        <span class="space5"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m2Float"></div>
+        <div class="catProducts ">
+            <div class="pad_10">
+                <div class="main-container">
+                    <span class="bestSellerLblNew">BEST SELLER</span>
+                    <div class="pad_10">
+                        <a href="#">
+                            <img src="http://localhost:53599/upload/prphotos/product-photo-69-722-02-23-53.jpg" class="primg" alt="Zuri Silver Ring" />
+                        </a>
+                        <div class="descBox">
+                            <span class="space10"></span>
+                            <div class="prTitleBox">
+                                <a href="#" class="prTitle">Zuri Silver Ring</a>
+                            </div>
+                            <span class="prOffer">
+                                Rs. 2940&nbsp;<span class="prPrice"><del> Rs. 3675</del></span>
+                            </span><span class="offerLbl">20% off</span>
+                            <div class="float_clear"></div>
+                        </div>
+                        <span class="space10"></span>
+                        <a href="#" class="viewDet">View Details</a>
+                        <div class="float_clear"></div>
+                        <span class="space5"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m3Float"></div>
+        <div class="catProducts ">
+            <div class="pad_10">
+                <div class="main-container">
+                    <span class="bestSellerLblNew">BEST SELLER</span>
+                    <div class="pad_10">
+                        <a href="#">
+                            <img src="http://localhost:53599/upload/prphotos/product-photo-65-640-11-10-02.JPG" class="primg" alt="Swirling Studs" />
+                        </a>
+                        <div class="descBox">
+                            <span class="space10"></span>
+                            <div class="prTitleBox">
+                                <a href="#" class="prTitle">Swirling Studs</a>
+                            </div>
+                            <span class="prOffer">Rs. 3440&nbsp;<span class="prPrice"><del> Rs. 4300</del></span></span>
+                            <span class="offerLbl">20% off</span>
+                            <div class="float_clear"></div>
+                        </div>
+                        <span class="space10"></span>
+                        <a href="#" class="viewDet">View Details</a>
+                        <div class="float_clear"></div>
+                        <span class="space5"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m2Float"></div>
+        <div class="m4Float"></div>
+        <span class="space30"></span>
+        <div class="txtCenter">
+            <a href="#" class="greenAnch">Explore</a>
+        </div>
+        <div class="float_clear"></div>
+        <span class="space50"></span>
+    </div>
+
+
+    <div id="visionBlock">
+
+        <div class="col_1200 ">
+            <div class="col_1_2 ">
+                <div class="pad_20 ">
+                    <div id="visionBox">
+                        <div>
+                            <h3 class="extra-large themeClrSec txtCenter">OUR VISION</h3>
+                            <span class="space20"></span>
+                            <p class="visionText">Our vision at Toral Jewels is to be the hallmark of luxury, trust, and timeless elegance. We aim to create not just jewelry but heirlooms that echo stories of love, joy, and milestones. With a commitment to sustainable and ethical sourcing, our mission extends beyond jewels. We endeavor to craft a legacy, where every gem not only adds brilliance to our patrons' lives but also contributes to a brighter, more ethical future in the jewelry industry.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col_1_2">
+                <div class="pad_20">
+                    <img id="visionImg" src="http://localhost:53599/upload/banner/other/banner-2-11-42-43.jpg" class="w100" alt="Toral Jewels Vision" />
+                </div>
+            </div>
+            <div class="float_clear"></div>
+        </div>
+    </div>
+    <span class="space50"></span>
+
+
+    <div id="banner4">
+        <span class="space50"></span>
+        <div class="col_1200 txtCenter">
+
+            <h1 class="large scriptBold txtCenter themeClrWhite ">OUR COMMITMENT </h1>
+            <span class="space50"></span>
+            <div class="col_1_4 ">
+                <div class="imgContainer">
+                    <img src="images/icons/superior-quality.svg" id="superiorImg" alt="Superior Quality Jewellery" />
+                </div>
+                <span class="space10"></span>
+                <h2 class="regular-medium">Superior Quality & Craftmanship</h2>
+            </div>
+            <div class="col_1_4">
+                <div class="imgContainer">
+                    <img src="images/icons/customer-care.svg" id="ccareImg" alt="Exceptional Customer Support" />
+                </div>
+                <span class="space10"></span>
+                <h2 class="regular-medium">Exceptional Customer Care</h2>
+            </div>
+            <div class="col_1_4">
+                <div class="imgContainer">
+                    <img src="images/icons/eco-friendly.svg" id="ecoFImg" alt="Ethical and Eco-Friendly Jewellery" />
+                </div>
+                <span class="space10"></span>
+                <h2 class="regular-medium">Ethical & Eco-Friendly</h2>
+            </div>
+            <div class="col_1_4">
+                <div class="imgContainer">
+                    <img src="images/icons/lifetime-gaurantee.svg" id="lifeGImg" alt="Lifetime Guarantee on Moissanite Stone" />
+                </div>
+                <span class="space10"></span>
+                <h2 class="regular-medium">Lifetime Stone Guarantee</h2>
+            </div>
+            <div class="float_clear"></div>
+        </div>
+        <span class="space50"></span>
+    </div>
+
+
+    <div id="moissaniteDesc" class="txtCenter">
+        <span class="space50"></span>
+        <a href="#" id="moissHead">What is Moissanite ?</a>
+
+        <span class="space50"></span>
+        <p>There is no stone on earth - natural or synthetic,</p>
+        <p>that compares to the brilliance of Moissanite.</p>
+        <span class="space50"></span>
+    </div>
+    <span class="space50"></span>
+
+    <div id="toralBlock">
+        <div class="prReel ">
+            <div class="pad_10">
+                <video width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="true" webkit-playsinline="true">
+                    <source src="http://localhost:53599/upload/videos/t-vid-05-28-10.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+        <div class="prReel ">
+            <div class="pad_10">
+                <video width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="true" webkit-playsinline="true">
+                    <source src="http://localhost:53599/upload/videos/o-vid-05-28-30.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+        <div class="prReel ">
+            <div class="pad_10">
+                <video width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="true" webkit-playsinline="true">
+                    <source src="http://localhost:53599/upload/videos/r-vid-05-32-25.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+        <div class="prReel ">
+            <div class="pad_10">
+                <video width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="true" webkit-playsinline="true">
+                    <source src="http://localhost:53599/upload/videos/a-vid-05-32-52.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+        <div class="prReel ">
+            <div class="pad_10">
+                <video width="100%" autoplay="autoplay" muted="muted" loop="loop" playsinline="true" webkit-playsinline="true">
+                    <source src="http://localhost:53599/upload/videos/l-vid-05-33-09.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    </div>
+    <div class="float_clear"></div>
+
+
+
+
+    <span class="space50"></span>
+    <div id="footer">
+        <span class="space50"></span>
+        <div class="col_1200">
+            <div class="footerCol">
+                <div class="pad_20">
+                    <img src="http://localhost:53599/images/icons/logo-green.svg" class="footerLogo" />
+                    <span class="space30"></span>
+
+                    <h1 class="lora-semibold regular">Chandrika Patel</h1>
+                    <p class="small">Jewellery Designer</p>
+                    <span class="space20"></span>
+
+                    <p class="small">Contact -  +91 9136760247</p>
+                    <span class="space20"></span>
+                    <p class="small">Email - support@toraljewels.com</p>
+                    <span class="space20"></span>
+                    <p class="small">Address - Mumbai</p>
+                    <span class="space20"></span>
+                    <div>
+                        <a href="#" class="email"></a>
+
+                        <a href="#" class="instagram"></a>
+                        <a href="#" class="whatsApp"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footerCol">
+                <div class="pad_20">
+                    <span class="ftMenu">Menu </span>
+                    <span class="space10"></span>
+                    <ul class="ftNav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">New In</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Collabs</a></li>
+                        <li><a href="#">About Moissanite</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footerCol">
+                <div class="pad_20">
+                    <span class="ftMenu">Quick Links </span>
+                    <span class="space10"></span>
+                    <ul class="ftNav">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Warranty Policy</a></li>
+                        <li><a href="#">Repairs</a></li>
+                        <li><a href="#">Replating Service</a></li>
+                        <li><a href="#">Return Exchange</a></li>
+                        <li><a href="#">Shipping Delivery</a></li>
+                        <li><a href="#">Terms Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerCol">
+                <div class="pad_20">
+                    <img src="http://localhost:53599/images/bis-logo.png" width="100" />
+                    <span class="space10"></span>
+                    <img src="http://localhost:53599/images/ssl.png" width="100" />
+                    <span class="space10"></span>
+                    <img src="http://localhost:53599/images/razorpay-logo.png" width="100" />
+                    <span class="space20"></span>
+                    <ul class="creditNav">
+                        <li>Developed by <a href="https://www.lucidedge.in" target="_blank">Lucid Edge Tech Serv</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="float_clear"></div>
+
+            <span class="space50"></span>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        (function ($) {
+            $(function () {
+                $('.toggle-overlay').click(function () {
+                    $('aside').toggleClass('open');
+                });
+            });
+        })(jQuery);
+    </script>
+
+    <script type="text/javascript">
+        $('#imgSlider').slick({
+            autoplay: true,
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () { ManageHeader() });
+        window.onscroll = function () { ManageHeader() };
+    </script>
+
+    <script>
+        var btn = $('#backTop');
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#navBtn").click(function () {
+                /*$(this).toggleClass("is-active");*/
+                $("#navMain").slideToggle("2000");
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#catBtn").click(function () {
+                HideAll("allCat");
+                $("#allCat").slideToggle("2000");
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#colBtn").click(function () {
+                HideAll("collMenu");
+                $("#collMenu").slideToggle("2000");
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        function ExpandCategory(catId) {
+            var listId = "#parentCat-" + catId;
+            $(listId).slideToggle("2000");
+        }
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var img = document.getElementById('visionImg');
+            var height = img.clientHeight;
+            document.getElementById('visionBox').style.height = height + "px";
+        };
+    </script>
+    <script type="text/javascript">
+
+        $(".see-more").each(function () {
+
+            $(this).nextUntil(".see-less").wrapAll("<div class='see-more-content'></div>");
+        });
+
+        $(".see-less").hide();
+        $(".see-more-content").slideUp(0);
+        $(".see-more").click(function () {
+            $(this).next(".see-more-content").slideToggle();
+            $(this).hide();
+            $(this).nextAll('.see-less').first().show();
+        });
+        $(".see-less").click(function () {
+            $(this).prev(".see-more-content").slideToggle();
+            $(this).hide();
+            $(this).prevAll(".see-more").first().show();
+        });
+    </script>
+
+</body>
+</html>
